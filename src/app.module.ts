@@ -13,7 +13,7 @@ import { PharmacyModule } from './pharmacy/pharmacy.module';
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => ({
-        uri: configService.get<string>('DATABASE_URL'),
+        uri: "mongodb+srv://aurabilanox:jbzbZxwKG280cBEY@cluster0.hhcri.mongodb.net/pharmacy",
       }),
       inject: [ConfigService],
     }),
