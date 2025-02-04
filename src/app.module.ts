@@ -9,11 +9,6 @@ import { PharmacyModule } from './pharmacy/pharmacy.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true, envFilePath: '.env' }),
-  
-    AuthModule,
-    FavoriteModule,
-    PharmacyModule,
   ],
   controllers: [AppController],
   providers: [AppService],
